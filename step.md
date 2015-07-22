@@ -137,16 +137,18 @@ for example,1AhZHrTHn95ug5813MAZ3F7qo7PENxg8CZ
  note: initial_clean will delete all file in packages directory
           copy will clone all related repo from Github           
 * Enter virtualenv and pip install gcoin-abe  
-            cd Wallet-Server  
-            . ./env/bin/activate  
-            cd packages/gcoin-abe  
-            (env)pip install -r requirement.txt  
-            (env) pip install -e packages/gcoin-abe  
+        
+        cd Wallet-Server  
+        . ./env/bin/activate  
+        cd packages/gcoin-abe  
+        (env)pip install -r requirement.txt  
+        (env) pip install -e packages/gcoin-abe  
 
 
 - Step 3: create a config file
 
     find a place 哪裏都可以
+    
         vim abe.conf
 
 content is as below:
