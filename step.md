@@ -26,11 +26,11 @@
 
 - 開port
 
-    firewall-cmd --permanent --zone=public --add-port=8000/tcp
+        firewall-cmd --permanent --zone=public --add-port=8000/tcp
 
 - 重啟防火牆
 
-    systemctl restart firewalld
+        systemctl restart firewalld
 
 
 #Bitcoin:
@@ -43,17 +43,17 @@
     
         vim ~/.bitcoin/bitcoin.conf
 
-    rpcuser=<自己設定>
-    rpcpassword=<自己設定>
-    rpcport=<自己設定>
+    rpcuser=<自己設定>  
+    rpcpassword=<自己設定>  
+    rpcport=<自己設定>  
     port=<自己設定>
 
 -------------------------
 example:
 
-rpcuser=bitcoinrpc
-rpcpassword=6SWniYid45ph9VFhVPepSzin2oJSsyepWiZKnJitZELD
-rpcport=12345
+rpcuser=bitcoinrpc  
+rpcpassword=6SWniYid45ph9VFhVPepSzin2oJSsyepWiZKnJitZELD  
+rpcport=12345  
 port=55321
 
 -------------------------
@@ -90,8 +90,7 @@ wait 10 blocks
     bitcoin-cli -gcoin listwalletaddress
 
 隨便選一個喜歡的
-for example,  
-1AhZHrTHn95ug5813MAZ3F7qo7PENxg8CZ
+for example,1AhZHrTHn95ug5813MAZ3F7qo7PENxg8CZ
 
 -----------------------------------
 
