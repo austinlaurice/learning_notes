@@ -37,37 +37,37 @@
 
 - 開啟 bitcoind
 
-    bitcoind -gcoin -gen -daemon
+        bitcoind -gcoin -gen -daemon
 
-第一次打開的時候，他會叫你設定bitcoin.conf
+    第一次打開的時候，他會叫你設定bitcoin.conf
     
-    vim ~/.bitcoin/bitcoin.conf
+        vim ~/.bitcoin/bitcoin.conf
 
-rpcuser=<自己設定>
-rpcpassword=<自己設定>
-rpcport=<自己設定>
-port=<自己設定>
-
--------------------------
-example:
-
-rpcuser=bitcoinrpc
-rpcpassword=6SWniYid45ph9VFhVPepSzin2oJSsyepWiZKnJitZELD
-rpcport=12345
-port=55321
+    rpcuser=<自己設定>
+    rpcpassword=<自己設定>
+    rpcport=<自己設定>
+    port=<自己設定>
 
 -------------------------
-note: rpcport跟port不可以跟別人一樣。 如果你發現port有人用了就換一個
+    example:
+
+    rpcuser=bitcoinrpc
+    rpcpassword=6SWniYid45ph9VFhVPepSzin2oJSsyepWiZKnJitZELD
+    rpcport=12345
+    port=55321
+
+-------------------------
+    note: rpcport跟port不可以跟別人一樣。 如果你發現port有人用了就換一個
 
 
-設定好bitcoin.conf
+    設定好bitcoin.conf
 
-    bitcoind -gen -gcoin -daemon
-應該就沒問題了
+        bitcoind -gen -gcoin -daemon
+    應該就沒問題了
     
     試試看
     
-    bitcoin-cli -gcoin getinfo
+        bitcoin-cli -gcoin getinfo
 
 ---------------------------------------------
 
@@ -110,18 +110,18 @@ for example,
 - Step 1: Create database for abe
 
 * Enter mysql interactive shell(in 112.121.87.195)
-    mysql -uroot -p
-    password is empty
+        mysql -uroot -p
+        password is empty
 
 * Create a database for abe(都要分號)
 
-    CREATE DATABASE <db_name>;
+        CREATE DATABASE <db_name>;
 因為 112.121.87.195是共用的所以麻煩大家要開database都加個prefix
 
 * Create a user and grant the user all privileges on abe database
 
-    CREATE USER <user>;
-    GRANT ALL ON <db_name>.* TO  <user>@'localhost' IDENTIFIED BY '<password>';
+        CREATE USER <user>;
+        GRANT ALL ON <db_name>.* TO  <user>@'localhost' IDENTIFIED BY '<password>';
 
 - Step 2: Install abe
  
@@ -129,23 +129,23 @@ for example,
 
  I have write a make file to download related repo from Github.
  So we can just run:
-    cd Wallet-Server
-    make initial_clean copy
+        cd Wallet-Server
+        make initial_clean copy
 
  note: initial_clean will delete all file in packages directory
           copy will clone all related repo from Github           
 * Enter virtualenv and pip install gcoin-abe
-    cd Wallet-Server run:
-    . ./env/bin/activate
-    cd packages/gcoin-abe
-    (env)pip install -r requirement.txt
-    (env) pip install -e packages/gcoin-abe
+        cd Wallet-Server run:
+        . ./env/bin/activate
+        cd packages/gcoin-abe
+        (env)pip install -r requirement.txt
+        (env) pip install -e packages/gcoin-abe
 
 
 - Step 3: create a config file
 
-find a place 哪裏都可以
-    vim abe.conf
+    find a place 哪裏都可以
+        vim abe.conf
 
 content is as below:
 
@@ -168,8 +168,8 @@ use your own dirname
 
 - Step 4: catch up (init)
 
-    (env) python -m Abe.abe --config /path/to/abe.conf --commit-bytes 100000 --no-serve 
+        (env) python -m Abe.abe --config /path/to/abe.conf --commit-bytes 100000 --no-serve 
 
 - Step 5: run abe
 
-    (env) python -m Abe.abe --config /path/to/abe.conf 
+        (env) python -m Abe.abe --config /path/to/abe.conf 
