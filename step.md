@@ -49,25 +49,25 @@
     port=<自己設定>
 
 -------------------------
-    example:
+example:
 
-    rpcuser=bitcoinrpc
-    rpcpassword=6SWniYid45ph9VFhVPepSzin2oJSsyepWiZKnJitZELD
-    rpcport=12345
-    port=55321
+rpcuser=bitcoinrpc
+rpcpassword=6SWniYid45ph9VFhVPepSzin2oJSsyepWiZKnJitZELD
+rpcport=12345
+port=55321
 
 -------------------------
-    note: rpcport跟port不可以跟別人一樣。 如果你發現port有人用了就換一個
+note: rpcport跟port不可以跟別人一樣。 如果你發現port有人用了就換一個
 
 
-    設定好bitcoin.conf
+設定好bitcoin.conf
 
-        bitcoind -gen -gcoin -daemon
-    應該就沒問題了
+    bitcoind -gen -gcoin -daemon
+應該就沒問題了
     
-    試試看
+試試看
     
-        bitcoin-cli -gcoin getinfo
+    bitcoin-cli -gcoin getinfo
 
 ---------------------------------------------
 
@@ -96,6 +96,7 @@ for example,
 -----------------------------------
 
 送color 1 的license給 1AhZHrTHn95ug5813MAZ3F7qo7PENxg8CZ
+    
     bitcoin-cli -gcoin sendlicensetoaddress 1AhZHrTHn95ug5813MAZ3F7qo7PENxg8CZ 1
 
 等10個block 
@@ -110,6 +111,7 @@ for example,
 - Step 1: Create database for abe
 
 * Enter mysql interactive shell(in 112.121.87.195)
+        
         mysql -uroot -p
         password is empty
 
@@ -129,6 +131,7 @@ for example,
 
  I have write a make file to download related repo from Github.
  So we can just run:
+        
         cd Wallet-Server
         make initial_clean copy
 
