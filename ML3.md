@@ -6,13 +6,13 @@
 
 **rules are popular:**  
 
-    *  簡單好理解
+*  簡單好理解
 
-    *  variable size
+*  variable size
 
-    *  deterministic
+*  deterministic
 
-    *  discrte & continuous parameters
+*  discrte & continuous parameters
 
 **單獨rule的形式: 一群tests的交集**  
 
@@ -26,4 +26,4 @@ exponential time(ADA的什麼東西也是這樣...), replication problem(同樣�
 
 **rule induction 比較容易overfitting:**
 
-    flexible but might find some sets of rules that just looks good sometimes
+flexible but might find some sets of rules that just looks good sometimes
