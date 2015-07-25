@@ -50,7 +50,9 @@ gain = m1'((-plgp)-(-p'lgp'))  (old surprise - new surprise, want to reduce our 
 
 <b>Laplace Estimate</b>: p = (m1 + 0.5)/(m0 + m1 + 1) 
 
+<b>General Prior Estimate</b>: prior belief p = k
 
+p = (m1 + k)/(m0 + m1 + 4k) -> the larger k is, the stronger our prior belief becomes
 
 
 
