@@ -12,7 +12,7 @@
 
 *  deterministic
 
-*  discrte & continuous parameters
+*  discrete & continuous parameters
 
 **單獨rule的形式: 一群tests的交集**  
 
@@ -27,3 +27,33 @@ exponential time(ADA的什麼東西也是這樣...), replication problem(同樣�
 **rule induction 比較容易overfitting:**
 
 flexible but might find some sets of rules that just looks good sometimes
+
+**choosing the best test:** 
+
+proposed rule covers m0' and m1' examples
+
+gain = m1'[(-plgp)-(-p'lgp')]  (old surprise - new surprise)
+
+但是decision tree會看兩邊，learning rules只會看一邊
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
