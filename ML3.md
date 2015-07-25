@@ -50,12 +50,32 @@ gain = m1'((-plgp)-(-p'lgp'))  (old surprise - new surprise, want to reduce our 
 
 <b>Laplace Estimate</b>: p = (m1 + 0.5)/(m0 + m1 + 1) 
 
-<b>General Prior Estimate</b>: prior belief p = k
+<b>General Prior Estimate</b>: If prior belief p = 0.25, can use any number k
 
 p = (m1 + k)/(m0 + m1 + 4k) -> the larger k is, the stronger our prior belief becomes
 
+**Learning Rules for Multiple Classes**
+
+*  Order rules
+
+*  Weighted vote 
+
+**Learning First-Order Rules:**
+
+using first order logic to represent
+
+<b>FOIL</b>:First-Order-Inductive Learner
+
+*  不是只有是非，有更powerful的表示法(literals, candidate specialization)
+
+Learning rule: P(x1, x2, ..xk) <- L1...Ln
 
 
+
+*  Evaluation function
+
+
+6th lecture 14min
 
 
 
