@@ -32,9 +32,27 @@ flexible but might find some sets of rules that just looks good sometimes
 
 proposed rule covers m0' and m1' examples
 
-gain = m1'[(-plgp)-(-p'lgp')]  (old surprise - new surprise)
+gain = m1'((-plgp)-(-p'lgp'))  (old surprise - new surprise, want to reduce our surprise)
 
-但是decision tree會看兩邊，learning rules只會看一邊
+但是decision tree會看兩邊(Divide and Conquer)，learning rules只會看一邊(Seperate and Conquer)
+
+**Search Procedure:**
+
+*  RR replacement
+
+*  Backfitting
+
+*  Beam Search: growin k new rules
+
+**Probability Estimates from Small Numbers:**
+
+原本的 p = m1/(m0 + m1) 但如果樣本數少，極不可靠
+
+<b>Laplace Estimate</b>: p = (m1 + 0.5)/(m0 + m1 + 1) 
+
+
+
+
 
 
 
