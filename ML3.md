@@ -93,25 +93,34 @@ more than one inverse deduction(跟積分一樣)
 figure out what are relavant
 
 優：background knowledge (B)
+
 缺：無法接受noisy data, Huge hypothesis space: overfitting, 
 
-lecture 8
+**Deduction: Resolution Rule**
 
+1. L 和 C1 在一個clause中，¬ L 和 C2 在另一個clause中
+
+2. Form the resolvent C by including all literls from C1 and C2, 除了L和¬ L
+
+  C = (C1 - {L})∪ (C2 - {¬ L})
+
+--> C2 = (C - (C1-{L}))∪ {¬ L}
+
+**First-Order Resolution**
+
+1.  Find a literal L1 from clause C1, literal L2 from clause C2 and substitution θ s.t. L1θ = ¬L2θ
+
+2.  Form the resolvent C by including all literals from C1θ and C2θ, 除了L1θ 和 ¬L2θ
+
+C = (C1 - {L1})θ∪ (C2-{L2})θ
+
+--> C2 = (C-(C1-{L1})θ<sub>1</sub>)θ<sub>2</sub><sup>-1</sup>∪ {L1θ<sub>1</sub>)θ<sub>2</sub><sup>-1</sup>}
+    
+generalization
+
+**Progol: Reduce combination explosion by generating the most specific acceptable h**
 
 Q1: argument, variable, literal指的是什麼？
+
 Q2: binding不太懂（rule 間會有相關）
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
