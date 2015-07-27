@@ -120,6 +120,8 @@ generalization
 
 **Progol: Reduce combination explosion by generating the most specific acceptable h**
 
+**Questions**
+
 Q1: argument, variable, literal指的是什麼？
 
 Q2: binding不太懂（rule 間會有相關）
