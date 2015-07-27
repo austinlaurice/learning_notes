@@ -68,20 +68,38 @@ using first order logic to represent
 
 *  不是只有是非，有更powerful的表示法(literals, candidate specialization)
 
-Learning rule: P(x1, x2, ..xk) <- L1...Ln
+Learning rule: P(x1, x2, ..xk) <- L1...Ln (L is literal)
+
+special predicate "Equal(x1, x2)": x1, x2是一樣的
+
+*  Information Gain in FOIL
+
+Fail_Gain(L, R)定義為 t(log<sub>2</sub> p1/(p1+n1) - log<sub>2</sub> p0/(p0+n0))
+
+binding: 會match某些subgraph
+
+R: original rule p0: num of positive bindings of R n0: num of negative bindings of R
+L: new rule p1: num of positive bindings of L+R n1: num of negative bindings of L+R
+t: R & L+R 交集的positive binding
+
+**Induction(歸納法) as Inverted Deduction(演繹法)**
+
+induction is finding a hypothesis h s.t. 
+
+(∀ <x<sub>i</sub>,f(x<sub>i</sub>)>∈ D) B∧ h∧ x<sub>i</sub> ├ f(x<sub>i</sub>)
+
+more than one inverse deduction(跟積分一樣)
+
+figure out what are relavant
+
+優：background knowledge (B)
+缺：無法接受noisy data, Huge hypothesis space: overfitting, 
+
+lecture 8
 
 
-
-*  Evaluation function
-
-
-6th lecture 14min
-
-
-
-
-
-
+Q1: argument, variable, literal指的是什麼？
+Q2: binding不太懂（rule 間會有相關）
 
 
 
