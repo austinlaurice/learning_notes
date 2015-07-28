@@ -49,7 +49,7 @@ gain = m1'((-plgp)-(-p'lgp'))  (old surprise - new surprise, want to reduce our 
 
 *  Backfitting
 
-*  Beam Search: growin k new rules
+*  Beam Search: growing k new rules
 
 **Probability Estimates from Small Numbers:**
 
@@ -130,6 +130,12 @@ generalization
 **Questions**
 
 Q1: argument, variable, literal指的是什麼？
+
+literal: test
+
+variable: x, y, z
+
+argument: ???
 
 Q2: binding不太懂（rule 間會有相關）
 
