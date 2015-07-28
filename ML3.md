@@ -4,6 +4,13 @@
 
 **為什麼不只learn rules就好？**
 
+*  slower
+
+*  比較不明瞭
+
+*  overfitting
+
+
 **rules are popular:**  
 
 *  簡單好理解
