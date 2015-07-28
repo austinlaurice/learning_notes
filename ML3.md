@@ -139,3 +139,4 @@ argument: ???
 
 Q2: binding不太懂（rule 間會有相關）
 
+這個rule會有多少個是positive的testdata(positive binding)
