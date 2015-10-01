@@ -2,6 +2,7 @@
 
 ##翻譯：
     python manage.py makemessages -a
+    python manage.py makemessages -d djangojs //特指javascript
     vim staffsite/staffsite/locale/zh/LC_MESSAGES/django.po
     python manage.py compilemessages
 
