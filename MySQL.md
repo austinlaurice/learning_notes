@@ -1,10 +1,16 @@
 #指令
 
+**創database**
+
+    CREATE xxxxdb
+**給某user權力**
+
+    GRANT ALL ON xxxxdb.* TO '<user>'@'localhost' IDENTIFIED BY '<password>';
 **換database**
 
     USE xxxxdb
 **列出database中的table們**
-    
+
     SELECT table_name FROM information_schema.TABLES;
 **列出某table中的欄位**
 
